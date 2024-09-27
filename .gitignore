@@ -1,0 +1,7 @@
+__pycache__/
+notebooks/*.ipynb
+src/.dockerignore
+src/main1.py
+src/preprocessing/
+/data/DRA.csv
+

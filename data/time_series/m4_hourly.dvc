@@ -1,0 +1,5 @@
+outs:
+- md5: f210ab8e7646213c434414c2ec410fa5.dir
+  size: 9081614
+  nfiles: 414
+  path: m4_hourly

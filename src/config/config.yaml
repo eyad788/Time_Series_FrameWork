@@ -1,0 +1,50 @@
+rnn:
+  batch_size: 32
+  epochs: 30
+  lr: 0.001
+  early_stopping:
+    patience: 3
+    monitor: 'loss' 
+    min_delta : 0.0001
+
+ann:
+  batch_size: 32
+  epochs: 50
+  early_stopping:
+    patience: 4
+    monitor: 'loss'
+    min_delta: 0.0001 
+
+arima:
+  period:
+   15T_week: 672
+   H_week: 168
+  start_p: 1
+  conf_interval: 1.96
+  ADF_alpha: 0.05
+  seasonal_decompose: 'additive'
+    # hourly: 'additive'
+    # 15_min: 'additive'
+
+
+prophet:
+  seasonality_prior_scale: 
+      15T: 0.01
+      H:   0.01
+      
+  weekly_seasonality:
+      15T: 25
+      H:  "auto"
+
+  daily_seasonality:
+      15T: 15
+      H:   10
+
+  changepoint_prior_scale:
+      15T: 0.5
+      H:   0.01
+
+  seasonality_mode:
+      15T: "additive"
+      H:   "additive"
+    

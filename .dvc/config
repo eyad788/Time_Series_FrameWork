@@ -1,0 +1,5 @@
+[core]
+    autostage = true
+    remote = hdfs_remote
+['remote "hdfs_remote"']
+    url = hdfs://192.168.125.202:8020/home/internship
